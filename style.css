@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.control-group label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.control-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.control-input:focus {
+  border-color: #4caf50;
+}
+
+#particleCanvas {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  height: calc(100vh - 160px); /* Adjust height based on controls and margins */
+}

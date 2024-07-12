@@ -9,23 +9,39 @@
   <body>
     <div class="container">
       <h1>Interactive Particle System</h1>
-      <canvas id="particleCanvas"></canvas>
       <div id="controls">
-        <label for="particleCount">Number of Particles:</label>
-        <input
-          type="number"
-          id="particleCount"
-          min="10"
-          max="1000"
-          value="100"
-        />
-        <label for="particleSize">Particle Size:</label>
-        <input type="range" id="particleSize" min="1" max="10" value="3" />
-        <label for="gravity">Gravity:</label>
-        <input type="checkbox" id="gravity" checked />
-        <label for="collision">Collision:</label>
-        <input type="checkbox" id="collision" checked />
+        <div class="control-group">
+          <label for="particleCount">Particles</label>
+          <input
+            type="number"
+            id="particleCount"
+            min="10"
+            max="1000"
+            value="100"
+            class="control-input"
+          />
+        </div>
+        <div class="control-group">
+          <label for="particleSize">Size</label>
+          <input
+            type="range"
+            id="particleSize"
+            min="1"
+            max="10"
+            value="3"
+            class="control-input"
+          />
+        </div>
+        <div class="control-group">
+          <label for="gravity">Gravity</label>
+          <input type="checkbox" id="gravity" checked class="control-input" />
+        </div>
+        <div class="control-group">
+          <label for="collision">Collision</label>
+          <input type="checkbox" id="collision" checked class="control-input" />
+        </div>
       </div>
+      <canvas id="particleCanvas"></canvas>
     </div>
     <script src="script.js"></script>
   </body>
